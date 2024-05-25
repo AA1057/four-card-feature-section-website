@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --clr-main: #4D4F62;
+  --clr-accent-1: #EA5454;
+  --clr-accent-2: #44D3D2;
+  --clr-accent-3: #FCAE4A;
+  --clr-accent-4: #549EF2;
+  --ff-main: "Poppins";
+  --fs-primary-heading: 1.5rem;
+  --fs-secondary-heading: 1.25rem;
+  --fs-primary-heading-desktop: 2.25rem;
+  --fs-primary-para: 0.9375rem;
+  --fs-secondary-para: 0.8125rem;
+}
+
+/* CSS Reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* General styling */
+body {
+  font-family: var(--ff-main), sans-serif;
+  color: var(--clr-main);
+  font-size: var(--fs-secondary-para);
+}
+
+p {
+  opacity: 0.5;
+}
+
+
+.container {
+  --heading: 3.5em;
+  --body: 1rem;
+  width: 83%;
+  margin: 0 auto;
+}
+
+.top-section {
+  text-align: center;
+}
+
+.main-heading {
+  margin-top: var(--heading);
+  font-size: var(--fs-primary-heading);
+  margin-bottom: var(--body);
+}
+
+.main-heading-1 {
+  font-weight: 200;
+}
+
+.main-heading-2 {
+  font-weight: 600;
+}
+
+.main-para {
+  font-size: var(--fs-primary-para);
+  margin-bottom: 4.75rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 4.875rem;
+  border-radius: 0.5rem;
+}
+
+.card-1 {
+  border-top: 3.5px solid var(--clr-accent-2);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px #DADAE5;
+}
+
+.card-2 {
+  border-top: 3.5px solid var(--clr-accent-1);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px #DADAE5;
+}
+
+.card-3 {
+  border-top: 3.5px solid var(--clr-accent-3);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px #DADAE5;
+}
+
+.card-4 {
+  border-top: 3.5px solid var(--clr-accent-4);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px #DADAE5;
+}
+
+.card-heading {
+  font-size: var(--fs-secondary-heading);
+  font-weight: 600;
+}
+
+.card-child>* {
+  width: 81.5%;
+  margin: 0 auto;
+}
+
+.card-child .card-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.image {
+  width: 57px;
+  height: 57px;
+  margin: 0 0 0 auto;
+  margin-right: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+
+/* Utility classes */
+/* .card-child{
+
+} */
+/* .card-heading{
+
+} */
+/* .card-para{
+
+} */
+/* Display:grid; */
