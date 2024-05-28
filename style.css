@@ -99,10 +99,12 @@ p {
 
 
 .container {
-  --heading: 3.5em;
-  --body: 1rem;
+  --heading: 5.3125rem;
+  --heading-bottom: 1rem;
+  --body: 4.75rem;
   width: 83%;
   margin: 0 auto;
+  max-width: 1110px;
 }
 
 .top-section {
@@ -112,7 +114,7 @@ p {
 .main-heading {
   margin-top: var(--heading);
   font-size: var(--fs-primary-heading);
-  margin-bottom: var(--body);
+  margin-bottom: var(--heading-bottom);
 }
 
 .main-heading-1 {
@@ -125,7 +127,7 @@ p {
 
 .main-para {
   font-size: var(--fs-primary-para);
-  margin-bottom: 4.75rem;
+  margin-bottom: var(--body);
 }
 
 .cards {
@@ -183,15 +185,38 @@ p {
   margin-bottom: 1.75rem;
 }
 
+@media (min-width:600px) {
+  .main-heading {
+    --heading: 5rem;
+    font-size: var(--fs-primary-heading-desktop);
+  }
 
-/* Utility classes */
-/* .card-child{
+  .main-para {
+    --body: 4rem;
+    max-width: 540px;
+    margin: 0 auto;
+    margin-bottom: var(--body);
+  }
 
-} */
-/* .card-heading{
+  .cards {
+    gap: 1.875rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 
-} */
-/* .card-para{
+  .card-1 {
+    grid-row: 1/3;
+    align-self: center;
+  }
 
-} */
-/* Display:grid; */
+  .card-3 {
+    grid-column: 2;
+  }
+
+  .card-4 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    align-self: center;
+  }
+
+}
